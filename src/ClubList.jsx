@@ -3,7 +3,7 @@ import Club from "./Club";
 function ClubList() {
   return (
     <div>
-      <h2>Club List</h2>
+      <h2>Club</h2>
       <Club />
       <Club />
     </div>
