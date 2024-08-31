@@ -1,23 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { SearchBar } from "../components/SearchBar";
-import BrowseNavBar from "../components/BrowseNavBar";
 import "../App.css";
 
 function Home() {
+  //   const handleLogin = (event) => {
+  //     logincount;
+  //   };
   return (
-    <body>
-      <div className="container">
-        <h1>Perspective</h1>
-      </div>
-      <div className="container">
-        <SearchBar />
-      </div>
-      <div className="browse">
-        <h2>Browse</h2>
-        <BrowseNavBar />
-      </div>
-    </body>
+    <>
+      <h1>This is the Home Page: Perspective</h1>
+    </>
   );
 }
 

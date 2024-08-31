@@ -1,4 +1,9 @@
 * {
+* {
   background-color: #e6e6fa;
-  font-family: "Mulish", sans-serif;
+}
+button {
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 0;
 }

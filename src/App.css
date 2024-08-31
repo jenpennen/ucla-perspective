@@ -1,13 +1,8 @@
 h1 {
   max-width: 100rem;
+h1 {
+  max-width: 100rem;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-.container {
-  max-width: 100rem;
-  border: 2px solid pink;
-}
-.browse {
   text-align: center;
 }
