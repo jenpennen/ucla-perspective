@@ -1,42 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import ClubList from "./ClubList";
-import "./App.css";
-import Button from "react-bootstrap/Button";
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import ClubDirectory from "./pages/ClubDirectory";
+import { Layout } from "./Layout";
 function App() {
-  const [logincount, LogCount] = useState(0);
-  const [signupcount, SignCount] = useState(0);
   return (
-    <>
-      <div>
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-      </div>
-      <div className="card">
-        <Button onClick={() => LogCount((logincount) => logincount + 1)}>
-          Log In: {logincount}
-        </Button>
-        <Button onClick={() => SignCount((signupcount) => signupcount + 1)}>
-          Sign Up: {signupcount}
-        </Button>
-      </div>
-      <h1>Welcome to Perspective</h1>
-      <p>Think Bruinwalk for clubs!</p>
-
-      <div>
-        <ClubList />
-      </div>
-      {/* <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/ClubDirectory" element={<ClubDirectory />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
