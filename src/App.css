@@ -4,3 +4,10 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
+.container {
+  max-width: 100rem;
+  border: 2px solid pink;
+}
+.browse {
+  text-align: center;
+}
