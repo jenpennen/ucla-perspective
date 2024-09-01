@@ -11,7 +11,6 @@ function BrowseNavBar() {
       <Link to="/RegisterClub">
         <button>Register Club</button>
       </Link>
-      <div></div>
     </div>
   );
 }
