@@ -97,10 +97,10 @@ function Login() {
           <FormInput placeholder="Password"></FormInput>
           <SelectRole>
             <option value="n/a">Select None</option>
-            <option value="user">User</option>
+            <option value="user">Student</option>
             <option value="admin">Club Admin</option>
           </SelectRole>
-          <SubmitButton>Submit</SubmitButton>
+          <SubmitButton>Log In</SubmitButton>
         </LoginForm>
         <CreateAccountLink>
           Don't have an account? <Link to="/SignUp"> Create Account</Link>
