@@ -6,7 +6,7 @@ import "../App.css";
 
 function Home() {
   return (
-    <>
+    <body>
       <div className="container">
         <h1>Perspective</h1>
       </div>
@@ -17,7 +17,7 @@ function Home() {
         <h2>Browse</h2>
         <BrowseNavBar />
       </div>
-    </>
+    </body>
   );
 }
 
