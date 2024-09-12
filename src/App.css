@@ -19,11 +19,12 @@ h1 {
 }
 .club-listing {
   display:grid;
+  justify-items: right;
   float: right;
   margin-right: 20vh;
+  row-gap: 25px;
 }
 .more-button {
-  justify-self: right;
   width: fit-content;
   background-color: purple;
   color: white;

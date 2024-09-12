@@ -22,7 +22,6 @@ const ClubBox = styled.div`
   padding-top: 25px;
   padding-bottom: 25px;
   box-shadow: 0 0 5px #c2c4c3;
-  margin-bottom: 20px;
 `;
 
 const ClubName = styled.h3`
@@ -57,7 +56,7 @@ const More = styled.p`
   justify-self: left;
   padding-left: 25px;
   padding-right: 25px;
-  margin: 0;
+  margin: 1em 0;
   font-style: italic;
   font-weight: bold;
   font-size: .9em;
@@ -76,17 +75,58 @@ const Info = styled.p `
   font-size: .9em;
 `;
 
-function Club(club) {
+const Container = styled.div `
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  margin: 0.5em 0;
+  column-gap: 1em;
+`;
+
+const Board = styled.p `
+  background-color: transparent;
+  font-weight: bold;
+  margin: 0;
+  align-content: center;
+`;
+
+const Logo = styled.div `
+  min-width: 3em;
+  min-height: 3em;
+  background-color: green;
+  border-radius: 50%;
+  margin: 0;
+`;
+
+export default function ClubSummary(prop) {
   return (
     <ClubBox>
-      <Tag>{club.tag}</Tag>
-      <ClubName>{club.name}</ClubName>
-      <Desc>{club.desc}</Desc>
+      <Tag>{prop.tag}</Tag>
+      <ClubName>{prop.name}</ClubName>
+      <Desc>{prop.upcoming}</Desc>
       <Line/>
       <More>More Info</More>
-      <Info>{club.info}</Info>
+      <Info>{prop.summary}</Info>
     </ClubBox>
   );
 }
 
-export default Club;
+export function ClubFull(prop) {
+  return (
+    <ClubBox>
+      <Tag>{prop.tag}</Tag>
+      <ClubName>{prop.name}</ClubName>
+      <Container>
+        <Logo></Logo>
+        <Board>
+          President: {prop.pres} <br/>
+          Vice President: {prop.vice}
+        </Board>
+      </Container>
+      <Line/>
+      <More>Club Info</More>
+      <Info>{prop.summary}</Info>
+    </ClubBox>
+  );
+}
