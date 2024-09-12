@@ -1,3 +1,6 @@
+button {
+  cursor: pointer;
+}
 h1 {
   max-width: 100rem;
   margin: 0 auto;
@@ -10,4 +13,23 @@ h1 {
 }
 .browse {
   text-align: center;
+}
+.directory {
+  text-align: center;
+}
+.club-listing {
+  display:grid;
+  float: right;
+  margin-right: 20vh;
+}
+.more-button {
+  justify-self: right;
+  width: fit-content;
+  background-color: purple;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: none;
+  margin: 0;
+  font-weight: bold;
 }
