@@ -41,7 +41,7 @@ export default function PropAll(prop) {
             return element;
         }
         else {
-            return element.name.toLowerCase().startsWith(prop.input)
+            return element.name.toLowerCase().startsWith(prop.input.toLowerCase())
         }
     });
 
