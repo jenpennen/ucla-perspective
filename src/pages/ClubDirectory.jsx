@@ -8,7 +8,7 @@ const Body = styled.body `
 `;
 
 const Container = styled.div `
-  max-width: 200vh;
+  width: 200vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,19 +43,20 @@ const Search = styled.input `
 `;
 
 function ClubDirectory() {
-  const [inputTxt, setInputTxt] = useState('');
+  const [inputName, setInputName] = useState('');
+  const [inputTag, setInputTag] = useState('All');
 
   return (
     <Body>
       <Title>Club Directory</Title>
-      <Search onChange={e => setInputTxt(e.target.value)} value={inputTxt} placeholder="Search for a club by name ..."></Search>
+      <Search onChange={e => setInputName(e.target.value)} value={inputName} placeholder="Search for a club by name ..."></Search>
       <Filters>
-        <Button>All</Button>
-        <Button>Recreational</Button>
-        <Button>Career Development</Button>
+        <Button onClick={() => setInputTag('All')} value={inputTag}>All</Button>
+        <Button onClick={() => setInputTag('Recreational')} value={inputTag}>Recreational</Button>
+        <Button onClick={() => setInputTag('Career Development')} value={inputTag}>Career Development</Button>
       </Filters>
       <Container>
-        <PropFull input={inputTxt}/>
+        <PropFull inputName={inputName} inputTag={inputTag}/>
       </Container>
     </Body>
   );
