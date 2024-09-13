@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropFull from "../components/Properties";
 import styled from "styled-components";
 
@@ -16,7 +17,7 @@ const Container = styled.div `
 `;
 
 const Title = styled.h1 `
-  width: 100%;
+  width: 70%;
   font-weight: 800;
   font-size: 2.3em;
   text-align: left;
@@ -33,17 +34,28 @@ const Button = styled.button `
   font-size: 1.2em;
 `;
 
+const Search = styled.input `
+  height: 3em;
+  background-color: white;
+  border-radius: 10px;
+  width: 20em;
+  align-self: center;
+`;
+
 function ClubDirectory() {
+  const [inputTxt, setInputTxt] = useState('');
+
   return (
     <Body>
       <Title>Club Directory</Title>
+      <Search onChange={e => setInputTxt(e.target.value)} value={inputTxt} placeholder="Search for a club by name ..."></Search>
       <Filters>
         <Button>All</Button>
         <Button>Recreational</Button>
         <Button>Career Development</Button>
       </Filters>
       <Container>
-        <PropFull />
+        <PropFull input={inputTxt}/>
       </Container>
     </Body>
   );

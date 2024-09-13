@@ -35,13 +35,21 @@ const props = [
     },
 ]
 
-export default function PropAll() {
-    const listItems = props.map((element) => {
-        return (
-            <ClubFull {...element}/>
-        );
+export default function PropAll(prop) {
+    const listItems = props.filter((element) => {
+        if (prop.input === '') {
+            return element;
+        }
+        else {
+            return element.name.toLowerCase().startsWith(prop.input)
+        }
     });
-    return <div style={{all: 'inherit'}}>{listItems}</div>;
+
+    return <div style={{all: 'inherit'}}>
+        {listItems.map((item) => (
+            <ClubFull {...item}/>
+        ))}
+    </div>;
 }
 
 export function PropSummary() {
