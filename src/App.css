@@ -18,7 +18,7 @@ h1 {
   text-align: center;
 }
 .club-listing {
-  display:grid;
+  display: grid;
   justify-items: right;
   float: right;
   margin-right: 20vh;
@@ -33,4 +33,9 @@ h1 {
   border: none;
   margin: 0;
   font-weight: bold;
+}
+
+.icons {
+  color: #4853b5;
+  background-color: white;
 }
