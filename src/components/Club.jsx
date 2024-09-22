@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const Tag = styled.button `
+const Tag = styled.button`
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   width: fit-content;
-  background-color: purple;
+  background-color: #4853b5;
   margin-left: 25px;
   padding: 6px;
   border-radius: 5px;
   border: none;
-  font-size: .7em;
+  font-size: 0.7em;
 `;
 
 const ClubBox = styled.div`
@@ -29,7 +29,7 @@ const ClubName = styled.h3`
   justify-self: left;
   padding-left: 25px;
   padding-right: 25px;
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-weight: bold;
   font-size: 1.3em;
 `;
@@ -44,7 +44,7 @@ const Desc = styled.p`
   font-size: 1.1em;
 `;
 
-const Line = styled.hr `
+const Line = styled.hr`
   width: 100%;
   height: 1px;
   opacity: 0.1;
@@ -59,10 +59,10 @@ const More = styled.p`
   margin: 1em 0;
   font-style: italic;
   font-weight: bold;
-  font-size: .9em;
+  font-size: 0.9em;
 `;
 
-const Info = styled.p `
+const Info = styled.p`
   background-color: transparent;
   margin-top: 0.5em;
   text-align: left;
@@ -72,10 +72,10 @@ const Info = styled.p `
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  font-size: .9em;
+  font-size: 0.9em;
 `;
 
-const Container = styled.div `
+const Container = styled.div`
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
@@ -84,14 +84,14 @@ const Container = styled.div `
   column-gap: 1em;
 `;
 
-const Board = styled.p `
+const Board = styled.p`
   background-color: transparent;
   font-weight: bold;
   margin: 0;
   align-content: center;
 `;
 
-const Logo = styled.div `
+const Logo = styled.div`
   min-width: 3em;
   min-height: 3em;
   background-color: green;
@@ -105,7 +105,7 @@ export default function ClubSummary(prop) {
       <Tag>{prop.tag}</Tag>
       <ClubName>{prop.name}</ClubName>
       <Desc>{prop.upcoming}</Desc>
-      <Line/>
+      <Line />
       <More>More Info</More>
       <Info>{prop.summary}</Info>
     </ClubBox>
@@ -120,11 +120,11 @@ export function ClubFull(prop) {
       <Container>
         <Logo></Logo>
         <Board>
-          President: {prop.pres} <br/>
+          President: {prop.pres} <br />
           Vice President: {prop.vice}
         </Board>
       </Container>
-      <Line/>
+      <Line />
       <More>Club Info</More>
       <Info>{prop.summary}</Info>
     </ClubBox>

@@ -1,12 +1,24 @@
+* {
+  --background: #e6e6fa;
+  --accent: #4853b5;
+  --secondary: #6671d1;
+  --light-accent: #8a93e0;
+}
+body {
+  background-color: var(--background);
+}
 button {
   cursor: pointer;
 }
 h1 {
-  max-width: 100rem;
-  margin: 0 auto;
+  margin: 1rem;
   padding: 2rem;
   text-align: center;
 }
+h2 {
+  margin: 1rem 0rem;
+}
+
 .container {
   max-width: 100rem;
   border: 2px solid pink;
@@ -26,7 +38,7 @@ h1 {
 }
 .more-button {
   width: fit-content;
-  background-color: purple;
+  background-color: var(--accent);
   color: white;
   padding: 5px 15px;
   border-radius: 8px;
@@ -36,6 +48,5 @@ h1 {
 }
 
 .icons {
-  color: #4853b5;
-  background-color: white;
+  color: var(--accent);
 }
