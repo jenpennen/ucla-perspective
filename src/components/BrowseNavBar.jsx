@@ -3,9 +3,6 @@ import { FaFolder, FaCalendarAlt, FaHome } from "react-icons/fa";
 import styled from "styled-components";
 import "./NavBar.css";
 
-const IconContainer = styled.div`
-  display: block;
-`;
 function BrowseNavBar() {
   return (
     <div className="icons-bar">

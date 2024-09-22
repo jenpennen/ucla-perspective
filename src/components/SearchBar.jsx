@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
-// import "./NavBar.css";
+import "./NavBar.css";
 const CenteredContainer = styled.div`
   display: flex;
   font-family: "Mulish", sans-serif;
