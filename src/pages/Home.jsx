@@ -19,7 +19,7 @@ function Home() {
         <h2>Browse</h2>
         <BrowseNavBar />
       </div>
-      <div className="directory">
+      <div className="container directory">
         <h2>Events Directory</h2>
         <p>Click on any date to check out any cool events around!</p>
         <div className="calendar">This is a calendar.</div>
