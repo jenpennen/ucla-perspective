@@ -1,9 +1,23 @@
+* {
+  --accent: #4332ab;
+}
 .navbar {
   position: right;
-  text-align: right;
+  text-align: center;
   border: 1px solid red;
 }
 button {
   border: 1px solid blue;
-  margin-right: 1rem;
+  margin: 0rem 1rem;
+}
+.browse-button {
+  border: none;
+}
+.browse-icons {
+  align-items: center;
+  color: var(--accent);
+  /* border: red solid 2px; */
+}
+.icon-container {
+  align-items: center;
 }
