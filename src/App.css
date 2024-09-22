@@ -1,5 +1,6 @@
 * {
   --background: #e6e6fa;
+  --heading: #4332ab;
   --accent: #4853b5;
   --secondary: #6671d1;
   --light-accent: #8a93e0;
@@ -10,10 +11,19 @@ body {
 button {
   cursor: pointer;
 }
+h1,
+h2 {
+  color: var(--heading);
+  text-align: center;
+  font-style: bold;
+  font-size: 2rem;
+  font-weight: 700;
+}
 h1 {
   margin: 1rem;
   padding: 2rem;
-  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
 }
 h2 {
   margin: 1rem 0rem;
