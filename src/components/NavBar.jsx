@@ -6,13 +6,13 @@ export function NavBar() {
       <div className="container">
         <div className="navbar">
           <Link to="/">
-            <button>Home</button>
+            <button className="home-button">Home</button>
           </Link>
           <Link to="/Login">
-            <button>Login</button>
+            <button className="home-button">Login</button>
           </Link>
           <Link to="/SignUp">
-            <button>Sign Up</button>
+            <button className="home-button">Sign Up</button>
           </Link>
           {/* <Link to="/ClubDirectory">
             <button>Club Directory</button>
