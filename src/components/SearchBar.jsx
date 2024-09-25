@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import PropFull from "../components/Properties";
+import PropAll from "../components/Properties";
 import { FaSearch } from "react-icons/fa";
 import "./NavBar.css";
 const CenteredContainer = styled.div`
@@ -38,9 +38,7 @@ const FormInput = styled.input`
   width: 30em;
 `;
 
-export function SearchBar() {
-  const [inputName, setInputName] = useState("");
-
+export function SearchBar({ inputName, setInputName }) {
   return (
     <CenteredContainer>
       <FormContainer>

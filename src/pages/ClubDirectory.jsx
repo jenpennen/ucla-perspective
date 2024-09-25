@@ -44,16 +44,6 @@ const Button = styled.button`
   font-size: 1.2em;
 `;
 
-const Search = styled.input`
-  height: 3em;
-  margin: 1rem;
-  border: red 1px solid;
-  background-color: white;
-  border-radius: 10px;
-  width: 20em;
-  align-self: center;
-`;
-
 function ClubDirectory() {
   const [inputName, setInputName] = useState("");
   const [inputTag, setInputTag] = useState("All");
@@ -62,12 +52,7 @@ function ClubDirectory() {
     <Body className="container">
       <div className="container">
         <Title>Club Directory</Title>
-        <SearchBar />
-        <Search
-          onChange={(e) => setInputName(e.target.value)}
-          value={inputName}
-          placeholder="Search for a club by name ..."
-        ></Search>
+        <SearchBar inputName={inputName} setInputName={setInputName} />
       </div>
       {/* <div className="container"> */}
       <div className="container">
