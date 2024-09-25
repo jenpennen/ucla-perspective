@@ -5,15 +5,23 @@ import { SearchBar } from "../components/SearchBar";
 import "../App.css";
 
 const Body = styled.body`
-  display: flex;
-  flex-wrap: wrap;
+  border: red solid 1px;
 `;
 
-const Container = styled.div`
-  width: 200vh;
+const DirectoryContainer = styled.div`
+  border: blue solid 10px;
+  // display: flex;
+  // flex-wrap: wrap;
+  margin-top: 2em;
+  width: 100rem;
+`;
+
+const ClubContainer = styled.div`
+  border: purple solid 1px;
+  width: calc(100% - 30rem);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: auto;
   gap: 2em;
   margin-top: 2em;
 `;
@@ -62,8 +70,7 @@ function ClubDirectory() {
         ></Search>
       </div>
       {/* <div className="container"> */}
-
-      <Container className="container">
+      <div className="container">
         <Filters>
           <Button onClick={() => setInputTag("All")} value={inputTag}>
             All
@@ -78,8 +85,15 @@ function ClubDirectory() {
             Career Development
           </Button>
         </Filters>
-        <PropAll inputName={inputName} inputTag={inputTag} />
-      </Container>
+      </div>
+      <DirectoryContainer>
+        <ClubContainer>
+          <PropAll inputName={inputName} inputTag={inputTag} />
+        </ClubContainer>
+        {/* <ClubContainer>
+          <PropAll inputName={inputName} inputTag={inputTag} />
+        </ClubContainer> */}
+      </DirectoryContainer>
       {/* </div> */}
     </Body>
   );

@@ -51,6 +51,56 @@ const props = [
     summary:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
   },
+  {
+    id: 6,
+    tag: "Academic",
+    name: "Book Club",
+    pres: "Josie Bruin",
+    vice: "Walter G.",
+    upcoming: "Dance Party at Pauley",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
+  },
+  {
+    id: 7,
+    tag: "Cultural",
+    name: "Korean American Student Association",
+    pres: "Josie Bruin",
+    vice: "Walter G.",
+    upcoming: "Dance Party at Pauley",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
+  },
+  {
+    id: 8,
+    tag: "Cultural",
+    name: "Chinese American Association",
+    pres: "Josie Bruin",
+    vice: "Walter G.",
+    upcoming: "Dance Party at Pauley",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
+  },
+  {
+    id: 9,
+    tag: "Recreational",
+    name: "Anime Club",
+    pres: "Josie Bruin",
+    vice: "Walter G.",
+    upcoming: "Dance Party at Pauley",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
+  },
+  {
+    id: 10,
+    tag: "Recreational",
+    name: "DF",
+    pres: "Josie Bruin",
+    vice: "Walter G.",
+    upcoming: "Dance Party at Pauley",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur deserunt veritatis ab corporis, magni iusto molestiae at, tempore consequatur architecto. Quo, autem? Quia veniam nesciunt hic fugiat enim quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae a quasi reprehenderit quam dicta et fugit molestias illo! Voluptatem libero similique beatae minima recusandae dicta, odio harum magni magnam.",
+  },
 ];
 
 export default function PropAll(prop) {

@@ -77,6 +77,7 @@ const Info = styled.p`
 
 const Container = styled.div`
   background-color: transparent;
+
   display: flex;
   flex-wrap: wrap;
   padding: 0 25px;
