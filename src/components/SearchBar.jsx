@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import PropFull from "../components/Properties";
 import { FaSearch } from "react-icons/fa";
 import "./NavBar.css";
 const CenteredContainer = styled.div`
@@ -38,11 +39,17 @@ const FormInput = styled.input`
 `;
 
 export function SearchBar() {
+  const [inputName, setInputName] = useState("");
+
   return (
     <CenteredContainer>
       <FormContainer>
         <SearchForm>
-          <FormInput placeholder="Search for club by name"></FormInput>
+          <FormInput
+            onChange={(e) => setInputName(e.target.value)}
+            value={inputName}
+            placeholder="Search for club by name"
+          ></FormInput>
           <FaSearch className="icons" />
         </SearchForm>
       </FormContainer>

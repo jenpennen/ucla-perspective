@@ -3,9 +3,10 @@
   --accent: #4332ab;
 }
 .navbar {
+  margin-top: 2ch;
   position: right;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 button {
   border: 1px solid blue;

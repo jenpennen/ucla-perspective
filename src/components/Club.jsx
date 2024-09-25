@@ -16,9 +16,9 @@ const Tag = styled.button`
 
 const ClubBox = styled.div`
   background-color: white;
-  width: 50vh;
+  width: calc(75rem-50%);
   display: grid;
-  border-radius: 25px;
+  border-radius: 10px;
   padding-top: 25px;
   padding-bottom: 25px;
   box-shadow: 0 0 5px #c2c4c3;

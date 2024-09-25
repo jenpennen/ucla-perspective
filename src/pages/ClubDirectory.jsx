@@ -1,13 +1,15 @@
 import { useState } from "react";
-import PropFull from "../components/Properties";
 import styled from "styled-components";
+import PropAll from "../components/Properties";
+import { SearchBar } from "../components/SearchBar";
+import "../App.css";
 
-const Body = styled.body `
+const Body = styled.body`
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Container = styled.div `
+const Container = styled.div`
   width: 200vh;
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +18,7 @@ const Container = styled.div `
   margin-top: 2em;
 `;
 
-const Title = styled.h1 `
+const Title = styled.h1`
   width: 70%;
   font-weight: 800;
   font-size: 2.3em;
@@ -24,18 +26,20 @@ const Title = styled.h1 `
   margin: 0;
 `;
 
-const Filters = styled.div `
+const Filters = styled.div`
   margin: 0 25px;
 `;
 
-const Button = styled.button `
+const Button = styled.button`
   border: none;
   text-transformation: uppercase;
   font-size: 1.2em;
 `;
 
-const Search = styled.input `
+const Search = styled.input`
   height: 3em;
+  margin: 1rem;
+  border: red 1px solid;
   background-color: white;
   border-radius: 10px;
   width: 20em;
@@ -43,21 +47,40 @@ const Search = styled.input `
 `;
 
 function ClubDirectory() {
-  const [inputName, setInputName] = useState('');
-  const [inputTag, setInputTag] = useState('All');
+  const [inputName, setInputName] = useState("");
+  const [inputTag, setInputTag] = useState("All");
 
   return (
-    <Body>
-      <Title>Club Directory</Title>
-      <Search onChange={e => setInputName(e.target.value)} value={inputName} placeholder="Search for a club by name ..."></Search>
-      <Filters>
-        <Button onClick={() => setInputTag('All')} value={inputTag}>All</Button>
-        <Button onClick={() => setInputTag('Recreational')} value={inputTag}>Recreational</Button>
-        <Button onClick={() => setInputTag('Career Development')} value={inputTag}>Career Development</Button>
-      </Filters>
-      <Container>
-        <PropFull inputName={inputName} inputTag={inputTag}/>
+    <Body className="container">
+      <div className="container">
+        <Title>Club Directory</Title>
+        <SearchBar />
+        <Search
+          onChange={(e) => setInputName(e.target.value)}
+          value={inputName}
+          placeholder="Search for a club by name ..."
+        ></Search>
+      </div>
+      {/* <div className="container"> */}
+
+      <Container className="container">
+        <Filters>
+          <Button onClick={() => setInputTag("All")} value={inputTag}>
+            All
+          </Button>
+          <Button onClick={() => setInputTag("Recreational")} value={inputTag}>
+            Recreational
+          </Button>
+          <Button
+            onClick={() => setInputTag("Career Development")}
+            value={inputTag}
+          >
+            Career Development
+          </Button>
+        </Filters>
+        <PropAll inputName={inputName} inputTag={inputTag} />
       </Container>
+      {/* </div> */}
     </Body>
   );
 }

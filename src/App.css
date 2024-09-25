@@ -8,9 +8,7 @@
 body {
   background-color: var(--background);
 }
-button {
-  cursor: pointer;
-}
+
 h1,
 h2 {
   color: var(--heading);
@@ -26,27 +24,29 @@ h1 {
   font-weight: 900;
 }
 h2 {
-  margin: 1rem 0rem;
+  margin: 3rem 0;
 }
 
 .container {
   max-width: 100rem;
-  border: 2px solid pink;
-}
-.browse {
+  /* border: 2px solid blue; */
   text-align: center;
 }
-.directory {
+.subcontainer {
+  border: 2px solid red;
+}
+.browse {
   text-align: center;
 }
 .club-listing {
   display: grid;
   justify-items: right;
   float: right;
+  margin-top: 10vh;
   margin-right: 20vh;
   row-gap: 25px;
 }
-.more-button {
+.button {
   width: fit-content;
   background-color: var(--accent);
   color: white;
@@ -55,6 +55,7 @@ h2 {
   border: none;
   margin: 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .icons {
