@@ -25,10 +25,10 @@ function Home() {
         <p>Click on any date to check out any cool events around!</p>
         <div className="container">
           <EventCalendar />
-          {/* <Link to="/ClubDirectory">
-            <button className="button">View on Events</button>
-          </Link> */}
         </div>
+        <Link to="/ClubDirectory">
+          <button className="button">View More on Events</button>
+        </Link>
       </div>
       <div className="container">
         <Footer />

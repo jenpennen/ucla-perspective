@@ -17,9 +17,9 @@ export default function EventCalendar() {
   return (
     <CalendarContainer>
       <Calendar />
-      <Link to="/ClubDirectory">
+      {/* <Link to="/ClubDirectory">
         <button className="button">View More on Events</button>
-      </Link>
+      </Link> */}
       {/* <div className="container">
         <PropSummary />
       </div> */}
