@@ -6,7 +6,7 @@ import "./NavBar.css";
 function BrowseNavBar() {
   return (
     <div className="icons-bar">
-      <Link to="/ClubDirectory">
+      <Link to="/club-directory">
         <button className="browse-button">
           <div className="icon-container">
             <FaFolder size={50} className="browse-icons" />
@@ -14,7 +14,7 @@ function BrowseNavBar() {
           Club Directory
         </button>
       </Link>
-      <Link to="/Events">
+      <Link to="/events">
         <button className="browse-button">
           <div className="icon-container">
             <FaCalendarAlt size={50} className="browse-icons" />
@@ -22,7 +22,7 @@ function BrowseNavBar() {
           Events
         </button>
       </Link>
-      <Link to="/RegisterClub">
+      <Link to="/register-club">
         <button className="browse-button">
           <div className="icon-container">
             <FaHome size={50} className="browse-icons" />

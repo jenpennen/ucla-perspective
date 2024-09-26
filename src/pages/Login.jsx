@@ -103,7 +103,7 @@ function Login() {
           <SubmitButton>Log In</SubmitButton>
         </LoginForm>
         <CreateAccountLink>
-          Don't have an account? <Link to="/SignUp"> Create Account</Link>
+          Don't have an account? <Link to="/signup"> Create Account</Link>
         </CreateAccountLink>
       </FormContainer>
     </CenteredContainer>

@@ -10,13 +10,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/ClubDirectory" element={<ClubDirectory />} />
-          <Route path="/Events" element={<Events />} />
-          <Route path="/RegisterClub" element={<RegisterClub />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/club-directory" element={<ClubDirectory />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/register-club" element={<RegisterClub />} />
         </Route>
       </Routes>
     </Router>

@@ -8,10 +8,10 @@ export function NavBar() {
           <Link to="/">
             <button className="home-button">Home</button>
           </Link>
-          <Link to="/Login">
+          <Link to="/login">
             <button className="home-button">Login</button>
           </Link>
-          <Link to="/SignUp">
+          <Link to="/signup">
             <button className="home-button">Sign Up</button>
           </Link>
           {/* <Link to="/ClubDirectory">
