@@ -1,4 +1,4 @@
-# Persective
+# Perspective
 
 Think Bruinwalk but for clubs.
 
