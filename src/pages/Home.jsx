@@ -16,8 +16,8 @@ function Home() {
       <div className="container">
         <SearchBar />
       </div>
-      <div className="browse">
-        <h2>Browse</h2>
+      <div className="container">
+        <hr />
         <BrowseNavBar />
       </div>
       <div className="container">

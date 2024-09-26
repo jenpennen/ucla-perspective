@@ -4,6 +4,7 @@
   --accent: #4853b5;
   --secondary: #6671d1;
   --light-accent: #8a93e0;
+  --gray: #333;
 }
 body {
   background-color: var(--background);
@@ -14,17 +15,36 @@ h2 {
   color: var(--heading);
   text-align: center;
   font-style: bold;
-  font-size: 2rem;
   font-weight: 700;
 }
 h1 {
-  margin: 1rem;
-  padding: 2rem;
+  margin: 15rem 1rem 5rem;
   font-size: 5rem;
   font-weight: 900;
 }
 h2 {
-  margin: 3rem 0;
+  font-size: 3rem;
+  margin: 8rem 0 1rem;
+}
+hr {
+  margin: auto;
+  margin-top: 5rem;
+  border: none;
+  border-top: 5px double var(--gray);
+  max-width: 50%;
+  color: var(--gray);
+  overflow: visible;
+  /* height: 10px; */
+}
+
+hr::after {
+  background: var(--background);
+  content: "Browse";
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  position: relative;
+  /* border: red 1px solid; */
+  top: -13px;
 }
 
 .container {
@@ -42,9 +62,6 @@ h2 {
   /* grid-column: 2; */
   gap: 2rem;
   width: 40rem;
-}
-.browse {
-  text-align: center;
 }
 .club-listing {
   display: grid;
