@@ -35,6 +35,14 @@ h2 {
 .subcontainer {
   border: 2px solid red;
 }
+.item {
+  border: 10px pink solid;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-column: 2; */
+  gap: 2rem;
+  width: 40rem;
+}
 .browse {
   text-align: center;
 }

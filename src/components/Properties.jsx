@@ -1,5 +1,5 @@
 import ClubSummary, { ClubFull } from "./Club";
-
+import "../App.css";
 const props = [
   {
     id: 1,
@@ -122,7 +122,7 @@ export default function PropAll(prop) {
   });
 
   return (
-    <div style={{ all: "inherit" }}>
+    <div className="item">
       {listItems.map((item) => (
         <ClubFull {...item} />
       ))}

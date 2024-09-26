@@ -18,10 +18,10 @@ const DirectoryContainer = styled.div`
 
 const ClubContainer = styled.div`
   border: purple solid 1px;
-  width: calc(100% - 30rem);
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+  width: calc(100% - 5em);
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin: auto;
   gap: 2em;
   margin-top: 2em;
 `;
@@ -35,7 +35,7 @@ const Title = styled.h1`
 `;
 
 const Filters = styled.div`
-  margin: 0 25px;
+  margin: 2rem 25px;
 `;
 
 const Button = styled.button`
@@ -54,7 +54,6 @@ function ClubDirectory() {
         <Title>Club Directory</Title>
         <SearchBar inputName={inputName} setInputName={setInputName} />
       </div>
-      {/* <div className="container"> */}
       <div className="container">
         <Filters>
           <Button onClick={() => setInputTag("All")} value={inputTag}>
@@ -69,17 +68,19 @@ function ClubDirectory() {
           >
             Career Development
           </Button>
+          <Button onClick={() => setInputTag("Cultural")} value={inputTag}>
+            Cultural
+          </Button>
         </Filters>
       </div>
       <DirectoryContainer>
         <ClubContainer>
-          <PropAll inputName={inputName} inputTag={inputTag} />
+          <PropAll className="item" inputName={inputName} inputTag={inputTag} />
         </ClubContainer>
         {/* <ClubContainer>
           <PropAll inputName={inputName} inputTag={inputTag} />
         </ClubContainer> */}
       </DirectoryContainer>
-      {/* </div> */}
     </Body>
   );
 }
