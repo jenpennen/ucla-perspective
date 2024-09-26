@@ -19,12 +19,16 @@ button {
   padding: 0.5rem 0.75rem;
   font-weight: 500;
 }
+.icons-bar {
+  font-size: large;
+}
 .browse-button {
   border: none;
 }
 .browse-icons {
   align-items: center;
   color: var(--accent);
+  margin: 1rem 3rem;
   /* border: red solid 2px; */
 }
 .icon-container {

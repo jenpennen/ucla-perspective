@@ -9,7 +9,7 @@ function BrowseNavBar() {
       <Link to="/ClubDirectory">
         <button className="browse-button">
           <div className="icon-container">
-            <FaFolder size={20} className="browse-icons" />
+            <FaFolder size={50} className="browse-icons" />
           </div>
           Club Directory
         </button>
@@ -17,7 +17,7 @@ function BrowseNavBar() {
       <Link to="/Events">
         <button className="browse-button">
           <div className="icon-container">
-            <FaCalendarAlt size={20} className="browse-icons" />
+            <FaCalendarAlt size={50} className="browse-icons" />
           </div>
           Events
         </button>
@@ -25,7 +25,7 @@ function BrowseNavBar() {
       <Link to="/RegisterClub">
         <button className="browse-button">
           <div className="icon-container">
-            <FaHome size={25} className="browse-icons" />
+            <FaHome size={50} className="browse-icons" />
           </div>{" "}
           Register Club
         </button>
