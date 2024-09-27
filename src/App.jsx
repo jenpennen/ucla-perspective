@@ -6,6 +6,7 @@ import ClubDirectory from "./pages/ClubDirectory";
 import Events from "./pages/Events";
 import RegisterClub from "./pages/RegisterClub";
 import { Layout } from "./Layout";
+import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/register-club" element={<RegisterClub />} />
         </Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }
