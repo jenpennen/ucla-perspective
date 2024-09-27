@@ -55,13 +55,14 @@ hr::after {
 .subcontainer {
   border: 2px solid red;
 }
-.item {
-  border: 10px pink solid;
+.grid {
+  /* border: 10px pink solid; */
   display: flex;
   flex-wrap: wrap;
+  gap: 3.5rem;
+  justify-content: center;
+
   /* grid-column: 2; */
-  gap: 2rem;
-  width: 40rem;
 }
 .club-listing {
   display: grid;

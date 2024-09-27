@@ -9,29 +9,21 @@ const Body = styled.body`
 `;
 
 const DirectoryContainer = styled.div`
-  border: blue solid 10px;
-  // display: flex;
-  // flex-wrap: wrap;
+  // border: blue solid 10px;
   margin-top: 2em;
-  width: 100rem;
 `;
 
 const ClubContainer = styled.div`
-  border: purple solid 1px;
-  width: calc(100% - 5em);
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin: auto;
-  gap: 2em;
-  margin-top: 2em;
+  // border: purple solid 10px;
+  // width: calc(100% - 5em);
+  margin: 5em;
 `;
 
 const Title = styled.h1`
-  width: 70%;
   font-weight: 800;
-  font-size: 2.3em;
-  text-align: left;
-  margin: 0;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 5rem;
 `;
 
 const Filters = styled.div`
@@ -75,7 +67,7 @@ function ClubDirectory() {
       </div>
       <DirectoryContainer>
         <ClubContainer>
-          <PropAll className="item" inputName={inputName} inputTag={inputTag} />
+          <PropAll inputName={inputName} inputTag={inputTag} />
         </ClubContainer>
         {/* <ClubContainer>
           <PropAll inputName={inputName} inputTag={inputTag} />

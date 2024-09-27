@@ -4,7 +4,7 @@ import { SearchBar } from "../components/SearchBar";
 import BrowseNavBar from "../components/BrowseNavBar";
 import "../App.css";
 import "../components/NavBar.css";
-import { PropSummary } from "../components/Properties";
+// import { PropSummary } from "../components/Properties";
 import EventCalendar from "../components/EventCalendar";
 import Footer from "../components/Footer";
 function Home() {

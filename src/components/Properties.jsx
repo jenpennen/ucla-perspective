@@ -122,20 +122,20 @@ export default function PropAll(prop) {
   });
 
   return (
-    <div className="item">
+    <div className="grid">
       {listItems.map((item) => (
-        <ClubFull {...item} />
+        <ClubFull className="item" {...item} />
       ))}
     </div>
   );
 }
 
-export function PropSummary() {
-  return (
-    <div>
-      <ClubSummary {...props[0]} />
-      <br style={{ height: "20px" }} />
-      <ClubSummary {...props[1]} />
-    </div>
-  );
-}
+// export function PropSummary() {
+//   return (
+//     <div>
+//       <ClubSummary {...props[0]} />
+//       <br style={{ height: "20px" }} />
+//       <ClubSummary {...props[1]} />
+//     </div>
+//   );
+// }
