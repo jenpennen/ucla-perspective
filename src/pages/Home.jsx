@@ -17,7 +17,7 @@ function Home() {
         <SearchBar />
       </div>
       <div className="container">
-        <hr />
+        <hr className="browse-line" />
         <BrowseNavBar />
       </div>
       <div className="container">
