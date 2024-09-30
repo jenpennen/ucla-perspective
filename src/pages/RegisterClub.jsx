@@ -9,15 +9,14 @@ const Header = styled.div`
   color: var(--accent);
 `;
 const RegisterContainer = styled.div`
-  border: red solid 1px;
   margin: 10rem;
+  height: 80vh;
 `;
 const FormContainer = styled.div`
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  // width: 350px;
 `;
 const RegisterForm = styled.form`
   display: flex;
