@@ -30,9 +30,6 @@ function Home() {
           <button className="button">View More on Events</button>
         </Link>
       </div>
-      <div className="container">
-        <Footer />
-      </div>
     </main>
   );
 }
