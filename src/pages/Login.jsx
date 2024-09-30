@@ -87,26 +87,28 @@ const CreateAccountLink = styled.p`
 `;
 function Login() {
   return (
-    <CenteredContainer>
-      <FormContainer>
-        <Header>Login</Header>
-        <LoginForm>
-          <Label>Email</Label>
-          <FormInput placeholder="Email"></FormInput>
-          <Label>Password</Label>
-          <FormInput placeholder="Password"></FormInput>
-          <SelectRole>
-            <option value="n/a">Select None</option>
-            <option value="user">Student</option>
-            <option value="admin">Club Admin</option>
-          </SelectRole>
-          <SubmitButton>Log In</SubmitButton>
-        </LoginForm>
-        <CreateAccountLink>
-          Don't have an account? <Link to="/signup"> Create Account</Link>
-        </CreateAccountLink>
-      </FormContainer>
-    </CenteredContainer>
+    <div className="container">
+      <CenteredContainer>
+        <FormContainer>
+          <Header>Login</Header>
+          <LoginForm>
+            <Label>Email</Label>
+            <FormInput placeholder="Email"></FormInput>
+            <Label>Password</Label>
+            <FormInput placeholder="Password"></FormInput>
+            <SelectRole>
+              <option value="n/a">Select None</option>
+              <option value="user">Student</option>
+              <option value="admin">Club Admin</option>
+            </SelectRole>
+            <SubmitButton>Log In</SubmitButton>
+          </LoginForm>
+          <CreateAccountLink>
+            Don't have an account? <Link to="/signup"> Create Account</Link>
+          </CreateAccountLink>
+        </FormContainer>
+      </CenteredContainer>
+    </div>
   );
 }
 

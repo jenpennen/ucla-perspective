@@ -26,7 +26,7 @@ function Home() {
         <div className="container">
           <EventCalendar />
         </div>
-        <Link to="/club-directory">
+        <Link to="/events">
           <button className="button">View More on Events</button>
         </Link>
       </div>
