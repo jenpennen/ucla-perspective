@@ -42,7 +42,7 @@ const FormInput = styled.input`
   background-color: white;
   border-radius: 4px;
 `;
-const ClubDescriptionInput = styled.input`
+const ClubDescriptionInput = styled.textarea`
   margin-bottom: 15px;
   padding: 10px;
   font-size: 16px;
