@@ -42,9 +42,9 @@
   color: #ababab;
 }
 .react-calendar__tile--now {
-  background-color: var(--light-accent);
   color: var(--accent);
   font-weight: bold;
+  font-size: 1rem;
 }
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
