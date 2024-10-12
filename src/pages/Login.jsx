@@ -7,7 +7,7 @@ const CenteredContainer = styled.div`
   font-family: "Mulish", sans-serif;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 30vh;
 `;
 const FormContainer = styled.div`
   background-color: white;
@@ -17,11 +17,7 @@ const FormContainer = styled.div`
   width: 350px;
 `;
 const Header = styled.h2`
-  background-color: #4853b5;
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 20px;
+  padding-top: 20px;
 `;
 const LoginForm = styled.form`
   display: flex;
@@ -31,11 +27,12 @@ const LoginForm = styled.form`
 `;
 const Label = styled.p`
   background-color: white;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 5px;
   text-transform: uppercase;
   color: #3b3b3b;
-  font-size: 0.1em;
+  font-size: 0.8em;
   font-weight: 500;
 `;
 const FormInput = styled.input`
@@ -88,9 +85,9 @@ const CreateAccountLink = styled.p`
 function Login() {
   return (
     <div className="container">
+      <Header>Login</Header>
       <CenteredContainer>
         <FormContainer>
-          <Header>Login</Header>
           <LoginForm>
             <Label>Email</Label>
             <FormInput placeholder="Email"></FormInput>
