@@ -31,8 +31,8 @@ const Label = styled.p`
   margin-bottom: 5px;
   text-transform: uppercase;
   color: #3b3b3b;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.8em;
+  font-weight: 600;
 `;
 const FormInput = styled.input`
   margin-bottom: 15px;

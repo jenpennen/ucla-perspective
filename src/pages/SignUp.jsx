@@ -7,7 +7,7 @@ const CenteredContainer = styled.div`
   font-family: "Mulish", sans-serif;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 30vh;
 `;
 const FormContainer = styled.div`
   background-color: white;
@@ -17,13 +17,10 @@ const FormContainer = styled.div`
   width: 350px;
 `;
 const Header = styled.h2`
-  background-color: #4853b5;
-  text-align: center;
-  color: white;
-  margin: 0;
+  color: #4853b5;
   padding: 20px;
 `;
-const LoginForm = styled.form`
+const SignUpForm = styled.form`
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -34,9 +31,10 @@ const Label = styled.p`
   margin-top: 0;
   margin-bottom: 5px;
   text-transform: uppercase;
+  text-align: left;
   color: #3b3b3b;
   font-size: 0.8em;
-  font-weight: 800;
+  font-weight: 600;
 `;
 const FormInput = styled.input`
   margin-bottom: 15px;
@@ -87,26 +85,28 @@ const CreateAccountLink = styled.p`
 `;
 function SignUp() {
   return (
-    <CenteredContainer>
-      <FormContainer>
-        <Header>Sign Up</Header>
-        <LoginForm>
-          <Label>Email</Label>
-          <FormInput placeholder="Email"></FormInput>
-          <Label>Create Password</Label>
-          <FormInput placeholder="Create Password"></FormInput>
-          <SelectRole>
-            <option value="n/a">Select None</option>
-            <option value="user">User</option>
-            <option value="admin">Club Admin</option>
-          </SelectRole>
-          <SubmitButton>Create Account</SubmitButton>
-        </LoginForm>
-        <CreateAccountLink>
-          Already have an account? <Link to="/login"> Login</Link>
-        </CreateAccountLink>
-      </FormContainer>
-    </CenteredContainer>
+    <div className="container">
+      <h2>Sign Up</h2>
+      <CenteredContainer>
+        <FormContainer>
+          <SignUpForm>
+            <Label>Email</Label>
+            <FormInput placeholder="Email"></FormInput>
+            <Label>Create Password</Label>
+            <FormInput placeholder="Create Password"></FormInput>
+            <SelectRole>
+              <option value="n/a">Select None</option>
+              <option value="user">User</option>
+              <option value="admin">Club Admin</option>
+            </SelectRole>
+            <SubmitButton>Create Account</SubmitButton>
+          </SignUpForm>
+          <CreateAccountLink>
+            Already have an account? <Link to="/login"> Login</Link>
+          </CreateAccountLink>
+        </FormContainer>
+      </CenteredContainer>{" "}
+    </div>
   );
 }
 
