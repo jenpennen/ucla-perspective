@@ -1,0 +1,7 @@
+.footer-body {
+  max-width: 100%;
+  max-height: 30%;
+  margin-top: 3rem;
+  background-color: var(--accent);
+  color: white;
+}
