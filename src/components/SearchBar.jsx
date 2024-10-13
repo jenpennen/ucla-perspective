@@ -6,11 +6,11 @@ import "../css/SearchBar.css";
 
 export function SearchBar({ inputName, setInputName }) {
   return (
-    <div className="centered-container">
+    <div className="search-container">
       <div className="form-container">
         <form className="search-form">
           <input
-            className="form-input"
+            className="search-input"
             onChange={(e) => setInputName(e.target.value)}
             value={inputName}
             placeholder="Search for club by name"

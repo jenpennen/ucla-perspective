@@ -1,111 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import "../css/Forms.css";
 
-const CenteredContainer = styled.div`
-  display: flex;
-  font-family: "Mulish", sans-serif;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-`;
-const FormContainer = styled.div`
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 350px;
-`;
-const Header = styled.h2`
-  color: #4853b5;
-  padding: 20px;
-`;
-const SignUpForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: white;
-`;
-const Label = styled.p`
-  background-color: white;
-  margin-top: 0;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #3b3b3b;
-  font-size: 0.8em;
-  font-weight: 600;
-`;
-const FormInput = styled.input`
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid lightgray;
-  background-color: white;
-  border-radius: 4px;
-`;
-const SelectRole = styled.select`
-  background-color: white;
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-`;
-
-const SubmitButton = styled.button`
-  background-color: #e6e6fa;
-  display: center;
-  color: black;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #8a93e0;
-    color: white;
-  }
-`;
-
-const CreateAccountLink = styled.p`
-  background-color: white;
-  text-align: center;
-  margin: 15px 0;
-  font-size: 10px;
-
-  a {
-    color: #6671d1;
-    text-decoration: underline;
-  }
-  &:hover {
-    color: red;
-  }
-`;
 function SignUp() {
   return (
     <div className="container">
       <h2>Sign Up</h2>
-      <CenteredContainer>
-        <FormContainer>
-          <SignUpForm>
-            <Label>Email</Label>
-            <FormInput placeholder="Email"></FormInput>
-            <Label>Create Password</Label>
-            <FormInput placeholder="Create Password"></FormInput>
-            <SelectRole>
+      <div className="centered-container">
+        <div className="form-container">
+          <form className="user-form">
+            <p className="label">Email</p>
+            <input className="form-input" placeholder="Email"></input>
+            <p className="label">Create Password</p>
+            <input className="form-input" placeholder="Create Password"></input>
+            <select className="select-role">
               <option value="n/a">Select None</option>
               <option value="user">User</option>
               <option value="admin">Club Admin</option>
-            </SelectRole>
-            <SubmitButton>Create Account</SubmitButton>
-          </SignUpForm>
-          <CreateAccountLink>
+            </select>
+            <button className="submit-btn">Create Account</button>
+          </form>
+          <p className="create-account-link">
             Already have an account? <Link to="/login"> Login</Link>
-          </CreateAccountLink>
-        </FormContainer>
-      </CenteredContainer>{" "}
+          </p>
+        </div>
+      </div>{" "}
     </div>
   );
 }
