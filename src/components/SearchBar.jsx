@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PropAll from "../components/Properties";
 import { FaSearch } from "react-icons/fa";
-import "./NavBar.css";
+import "../css/NavBar.css";
 const CenteredContainer = styled.div`
   display: flex;
   font-family: "Mulish", sans-serif;

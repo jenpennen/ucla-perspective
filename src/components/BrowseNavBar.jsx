@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFolder, FaCalendarAlt, FaHome } from "react-icons/fa";
 import styled from "styled-components";
-import "./NavBar.css";
+import "../css/NavBar.css";
 
 function BrowseNavBar() {
   return (

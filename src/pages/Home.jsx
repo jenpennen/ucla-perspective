@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { SearchBar } from "../components/SearchBar";
 import BrowseNavBar from "../components/BrowseNavBar";
 import "../App.css";
-import "../components/NavBar.css";
+import "../css/NavBar.css";
 // import { PropSummary } from "../components/Properties";
 import EventCalendar from "../components/EventCalendar";
 import Footer from "../components/Footer";
