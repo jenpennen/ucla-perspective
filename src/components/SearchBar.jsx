@@ -7,7 +7,7 @@ import "../css/SearchBar.css";
 export function SearchBar({ inputName, setInputName }) {
   return (
     <div className="search-container">
-      <div className="form-container">
+      <div className="search-form-container">
         <form className="search-form">
           <input
             className="search-input"
