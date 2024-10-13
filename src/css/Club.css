@@ -1,0 +1,17 @@
+.club-listing {
+  display: grid;
+  justify-items: right;
+  float: right;
+  margin-top: 10vh;
+  margin-right: 20vh;
+  row-gap: 25px;
+}
+.grid {
+  /* border: 10px pink solid; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  justify-content: center;
+
+  /* grid-column: 2; */
+}
