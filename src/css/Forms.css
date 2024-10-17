@@ -12,8 +12,17 @@
   overflow: visible;
   width: 350px;
 }
+.register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
 .header {
-  padding-top: 20px;
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
 }
 .user-form {
   display: flex;
@@ -24,31 +33,30 @@
 }
 .label {
   background-color: white;
-  margin: 10px 0 0 10px;
-  text-transform: uppercase;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
   color: #3b3b3b;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
 }
 .form-input,
 .submit-btn {
-  margin: 10px;
+  margin-bottom: 15px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid lightgray;
   background-color: white;
   border-radius: 4px;
-  width: auto;
 }
 .select-role {
   background-color: white;
-  margin: 10px;
+  margin-bottom: 15px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #181414;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  width: auto;
 }
 .submit-btn {
   background-color: #e6e6fa;
@@ -74,4 +82,17 @@ a {
 }
 a:hover {
   color: red;
+}
+.register-container {
+  margin: 10rem;
+  height: 80vh;
+}
+.club-description-text {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  height: 10rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 4px;
 }
